@@ -53,6 +53,10 @@ app.use('/api/auth', authRoutes);
 app.use('/api/post', postRoutes);
 app.use('/api/comment', commentRoutes);
 
+app.get("/", (req, res) => {
+  res.send("API Working");
+});
+
 
 
 app.use((err, req, res, next) => {
